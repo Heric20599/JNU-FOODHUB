@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>User Dashboard</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>hemant bharwdaj!</h1>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+        <div class="center-buttons">
+            <button class="update-button" onclick="showUpdateSlide()">Update</button>
+            <button class="delete-button" onclick="showdeleteSlide()">Delete Account</button>
+        </div>
+    
+        <section id="orderHistory" class="box">
+            <h2>Order History</h2>
+            <ul id="orderList">
+                <li>Order #1</li>
+                <li>Order #2</li>
+                <li>Order #3</li>
+            </ul>
+        </section>
+
+        <section id="orderDetails" class="box">
+            <h2>Order Details</h2>
+            <div id="detailsContainer">
+                <p>Details for Order #1</p>
+            </div>
+        </section>
+
+        
+
+        <!-- Update Slide/Modal -->
+        <div id="updateSlide">
+            <div id="updateForm">
+                <h2>Update Information</h2>
+                <!-- Add your form fields for updating information -->
+                <label for="updateName">Name:</label>
+                <input type="text" id="updateName" placeholder="Enter your name">
+
+                <label for="updateAddress">Address:</label>
+                <input type="text" id="updateAddress" placeholder="Enter your address">
+
+                <label for="updateMobile">Mobile Number:</label>
+                <input type="text" id="updateMobile" placeholder="Enter your mobile number">
+
+                <label for="updateEmail">Email:</label>
+                <input type="text" id="updateEmail" placeholder="Enter your email">
+
+                <button onclick="updateInformation()">Update</button>
+                <button onclick="hideUpdateSlide()">Cancel</button>
+            </div>
+        </div>
+
+        <div id="deleteSlide">
+            <div id="deleteForm">
+                <h2>delete your account</h2>
+                 <label for="password">password:</label>
+                <input type="text" id="password" placeholder="Enter your password">
+
+               <button onclick="deleteInformation()">delete</button>
+               <button onclick="hidedeleteSlide()">Cancel</button>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer_main">
+
+            <div class="footer_tag">
+                <h2>Location</h2>
+                <p>India</p>
+                
+            </div>
+
+            <div class="footer_tag">
+                <h2>Quick Link</h2>
+                <p>Home</p>
+                <p>About</p>
+                <p>Menu</p>
+                <p>Gallary</p>
+                <p>Order</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Contact</h2>
+                <p>+91</p>
+                <p>+91737771454</p>
+                <p>123@gmail.com</p>
+                <p>hericbhardwaj20599@gmail.com</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Our Service</h2>
+                <p>Fast Delivery</p>
+                <p>Easy Payments</p>
+                <p>24 x 7 Service</p>
+            </div>
+
+            <div class="footer_tag">
+                <h2>Follows</h2>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+        </div>
+
+        <p class="end">Design by<span><i class="fa-solid fa-face-grin"></i> #JNUFoodHub team</span></p>
+
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
